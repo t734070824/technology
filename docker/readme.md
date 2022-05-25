@@ -2,6 +2,7 @@
 
 ### 依赖
 1. kernel namespaces and cgroups
+   - 深入Linux内核架构.pdf
 2. go语言
 3. volume 的概念和本质
 4. netshoot
