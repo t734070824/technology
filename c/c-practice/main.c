@@ -1,15 +1,15 @@
 #include <stdio.h>
-#include <string.h>
 
-#define PRAISE "You are an extraordinary being."
+#define MSG "Im special"
 
 int main(void) {
-    char name[40];
-    printf("name:");
-    scanf("%s", name);
-    printf("hello %s.%s \n", name, PRAISE);
-    printf("%zd--%zd \n", strlen(name), sizeof name);
-    printf("praise %zd\n", strlen(PRAISE));
-    printf("%zd cells\n", sizeof PRAISE);
+    char ar[] = MSG;
+    const char  *pt = MSG;
+    printf("address of im %p \n", "Im special");
+    printf("address ar : %p \n", ar);
+    printf("address pt : %p \n", pt);
+    printf("address MSG : %p \n", MSG);
+    printf("address of im %p \n", "Im special");
     return 0;
 }
+
