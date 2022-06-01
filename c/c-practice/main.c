@@ -26,6 +26,12 @@ int main(void) {
     float  f = 3510593.0;
     show_int(i);
     show_float(f);
+
+    short x = 12345;
+    short mx = -x;
+    show_bytes((byte_pointer) &x, sizeof(short));
+    show_bytes((byte_pointer) &mx, sizeof(short));
+
     return 0;
 }
 
