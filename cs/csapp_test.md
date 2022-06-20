@@ -106,5 +106,14 @@
 16. 2.30
     - int sum = x + y
     - if(x >= 0 && y >= 0 && sum < 0) && (x < 0 && y <0 && sum > 0)
-17. 
+17. 2.32
+    - x和y 异号的时候 检测是错误的
+    - if(x>0&y<0) tadd_ok(x,-y);
+    - if(x<0&y>0) tadd_ok(-x,y)
+    - $$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    - 注意: Int_MIN = - Int_MIN
+    - if(y == Int_MIN)
+      - if x>=0 return false
+      - else return true
+    - else return tadd_ok(x-y)
 
