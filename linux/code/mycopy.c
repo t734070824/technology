@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int arg, int *argv[]){
+int main(int arg, char *argv[]){
 
     FILE *fps, *fpd;
+    int ch = 0;
 
-    if(arg < 3){}{
-        fprintf(stderr, "Usage: &s <src_file <dest_file>\n", argv[0]);
+    if(arg < 3){
+        fprintf(stderr, "Usage: %s <src_file <dest_file>\n", argv[0]);
         exit(1);
     }
 
@@ -18,11 +19,15 @@ int main(int arg, int *argv[]){
     }
 
     fpd = fopen(argv[2],"w");
+    if(fpd == NULL){
+        perror("fopen()");
+        exit(1);
+    }
 
     while(1){
-        int ch = fgetc(fps);
+        ch = fgetc(fps);
         if(ch == EOF)
-            break
+            break;
         fputc(ch, fpd);
     }
 
