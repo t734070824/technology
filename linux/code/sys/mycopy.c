@@ -14,6 +14,7 @@ int main(int argc, char **argv)
     }
     int sfd, dfd;
     int ret, len;
+    int pos;
     char buf[BUFSIZE];
     sfd = open(argv[1], O_RDONLY);
     if(sfd < 0){
@@ -29,18 +30,23 @@ int main(int argc, char **argv)
     }
 
     while(1){
-        ret = read(sfd, buf, BUFSIZE);
-        if(ret < 0){
+        len = read(sfd, buf, BUFSIZE);
+        if(len < 0){
             perror("read()");
             break;
         }
-        if(ret == 0){
+        if(len == 0){
             break;
         }
-        len = write(dfd, buf, ret);
-        if(len < 0){
-            perror("write()");
-            exit(1);
+        pos = 0;
+        while(len > 0){
+            ret = write(dfd, buf+pos, len);
+            if(ret < 0){
+                perror("write()");
+                exit(1);
+            }
+            pos += ret;
+            len -= ret;
         }
     }
 
