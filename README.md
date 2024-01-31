@@ -1,4 +1,38 @@
+## 常用的中间件
+分布式配置：Disconf、Apollo、Spring Cloud Config、Diamond
+压测：LoadRunner、JMeter、AB、webbench
+网关：Nginx、Kong、Zuul, Gateway
+缓存：Redis、MemCached、OsCache、EhCache
+搜索：ElasticSearch、Solr
+熔断：Hystrix、resilience4j
+负载均衡：DNS、F5、LVS、Nginx、OpenResty、HAproxy
+注册中心：Eureka、Zookeeper、Redis、Etcd、Consul
+认证鉴权：JWT, auth2.0
+消费队列：RabbitMQ、ZeroMQ、Redis、ActiveMQ、Kafka
+系统监控：Grafana、Prometheus、Influxdb、Telegraf、Lepus
+文件系统：OSS、NFS、FastDFS、MogileFS
+RPC框架： Dubbo、Motan、Thrift、grpc
+构建工具：Maven、Gradle
+集成部署：Docker、Jenkins、Git、Maven
+数据库：MySql、Redis、MongoDB、PostgreSQL、Memcache、HBase
+网络：专用网络VPC、弹性公网IP、CDN
+数据库中间件：DRDS、Mycat、360 Atlas、Cobar (不维护了)
+分布式框架：Dubbo、Motan、Spring-Could
+分布式任务：XXL-JOB、Elastic-Job、Saturn、Quartz
+分布式追踪：Pinpoint、CAT、zipkin
+分布式事务：http://www.txlcn.org/zh-cn/ LCN
+分布式日志：elasticsearch、logstash、Kibana 、redis、kafka等等
+版本发布：蓝绿部書、A/B测试、灰度发布/金丝雀发布
+
+## 语言
+1. java: Apollo, Spring Cloud, JMeter, Gateway, ElasticSearch, Hystrix, Eureka, Zookeeper, Kafka, Dubbo, Maven, elasticsearch,XXL-JOB, Pinpoint, zipkin
+2. C: Nginx, Redis, MemCached, HAproxy, FastDFS
+3. go: Etcd, Prometheus, istio, Kubernetes, docker
+4. Erlang: RabbitMQ
+5. C++: grpc, MySql, MongoDB
+
 ## technology
+
 
 1. 当前房地产和银行的关系
 2. 股息在投资过程中的所处的地位到底是怎么样的
