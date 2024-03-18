@@ -1,3 +1,6 @@
+## 路线
+1. nginx -- Etcd/eureka -- Spring-boot/spring-cloud - auth2.0 -- Hystrix -- Dubbo/gprc -- Pinpoint -- MySql/MongoDB -- Kafka --  redis --  nacos -- OSS -- elk -- Prometheus + Grafana -- Docker
+
 ## 常用的中间件
 分布式配置：Disconf、Apollo、Spring Cloud Config、Diamond
 压测：LoadRunner、JMeter、AB、webbench
